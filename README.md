@@ -12,7 +12,7 @@ References: [GitHub](https://github.com/lrsjng/fquery-replace), [npm](https://ww
 
 ## Usage
 
-    fQuery.plugin('replace');
+    fQuery.plugin('fquery-replace');
     fQuery(selector).replace([['foo', 'bar'], [/^foo/, 'bar']]);
 
 
