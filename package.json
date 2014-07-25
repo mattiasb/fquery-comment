@@ -1,0 +1,25 @@
+{
+  "name": "fquery-replace",
+  "displayName": "fQuery.replace",
+  "version": "0.1.0",
+  "description": "fQuery plugin to replace file content via String or RegExp match with new content",
+  "homepage": "https://github.com/lrsjng/fquery-replace",
+  "bugs": "https://github.com/lrsjng/fquery-replace/issues",
+  "author": "Lars Jung <lrsjng@gmail.com> (http://larsjung.de)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lrsjng/fquery-replace.git"
+  },
+  "main": "./fquery-replace.js",
+  "scripts": {
+    "test": "mocha --recursive -R spec test.js"
+  },
+  "dependencies": {
+    "escape-string-regexp": "~1.0.1",
+    "underscore": "~1.6.0"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
+}
