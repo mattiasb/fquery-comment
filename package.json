@@ -1,7 +1,7 @@
 {
   "name": "fquery-replace",
   "displayName": "fQuery.replace",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "fQuery plugin to replace file content via String or RegExp match with new content",
   "homepage": "https://github.com/lrsjng/fquery-replace",
   "bugs": "https://github.com/lrsjng/fquery-replace/issues",

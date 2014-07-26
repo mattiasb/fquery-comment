@@ -3,15 +3,14 @@
 
 
 var assert = require('assert'),
-	fQuery = require('fquery'),
-	replace = require('./');
+	fQuery = require('fquery');
 
 
 describe('fQuery.fn.replace()', function () {
 
 	before(function () {
 
-		fQuery.plugin(replace);
+		fQuery.plugin(require('./'));
 	});
 
 	beforeEach(function () {
