@@ -8,8 +8,7 @@ module.exports = function (fQuery) {
 
 		rules = rules || [];
 
-		var _ = require('underscore'),
-			escapeStringRegexp = require('escape-string-regexp');
+		var escapeStringRegexp = require('escape-string-regexp');
 
 		return this.edit(function (blob) {
 
@@ -20,11 +19,11 @@ module.exports = function (fQuery) {
 				var sel = rule[0],
 					repl = rule[1];
 
-				if (_.isString(sel)) {
+				if (fQuery._.isString(sel)) {
 					sel = new RegExp(escapeStringRegexp(sel), 'g');
 				}
 
-				if (_.isRegExp(sel)) {
+				if (fQuery._.isRegExp(sel)) {
 					content = content.replace(sel, repl);
 				}
 			});
