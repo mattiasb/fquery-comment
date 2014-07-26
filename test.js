@@ -3,15 +3,16 @@
 
 
 var assert = require('assert'),
-	_ = require('underscore'),
 	fQuery = require('fquery'),
 	replace = require('./');
 
 
-fQuery.plugin(replace);
-
-
 describe('fQuery.fn.replace()', function () {
+
+	before(function () {
+
+		fQuery.plugin(replace);
+	});
 
 	beforeEach(function () {
 
@@ -34,7 +35,7 @@ describe('fQuery.fn.replace()', function () {
 
 	it('is function', function () {
 
-		assert.ok(_.isFunction(fQuery.fn.replace));
+		assert.ok(fQuery._.isFunction(fQuery.fn.replace));
 	});
 
 	it('expects 1 parameter', function () {

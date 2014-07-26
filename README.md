@@ -4,6 +4,7 @@
 [![Downloads](http://img.shields.io/npm/dm/fquery-replace.svg?style=flat)](https://www.npmjs.org/package/fquery-replace)
 [![License](http://img.shields.io/npm/l/fquery-replace.svg?style=flat)](https://www.npmjs.org/package/fquery-replace)
 [![Dependencies Status](http://img.shields.io/david/lrsjng/fquery-replace.svg?style=flat)](https://david-dm.org/lrsjng/fquery-replace)
+[![Build Status](http://img.shields.io/travis/lrsjng/fquery-replace.svg?style=flat)](https://travis-ci.org/lrsjng/fquery-replace)
 
 [fQuery](https://github.com/lrsjng/fquery) plugin to replace file content via String or RegExp match with new content.
 To report a bug or make a feature request please create [a new issue](https://github.com/lrsjng/fquery-replace/issues/new).
