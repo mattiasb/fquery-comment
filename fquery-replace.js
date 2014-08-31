@@ -4,39 +4,30 @@
 
 module.exports = function (fQuery) {
 
-	fQuery.fn.replace = function (rules) {
+    fQuery.fn.replace = function (arg1, arg2) {
 
-		rules = rules || [];
+        return this.edit(function (blob) {
 
-		var escapeStringRegexp = require('escape-string-regexp');
+            try {
+                blob.content = blob.content.replace(arg1, arg2);
+            } catch (e) {
+                fQuery.report({
+                    type: 'err',
+                    method: 'replace',
+                    message: e.message,
+                    fquery: this,
+                    blob: blob,
+                    err: e
+                });
+            }
+        });
+    };
 
-		return this.edit(function (blob) {
+    fQuery.fn.thenReplace = function (arg1, arg2) {
 
-			var content = blob.content;
+        return this.then(function () {
 
-			rules.forEach(function (rule) {
-
-				var sel = rule[0],
-					repl = rule[1];
-
-				if (fQuery._.isString(sel)) {
-					sel = new RegExp(escapeStringRegexp(sel), 'g');
-				}
-
-				if (fQuery._.isRegExp(sel)) {
-					content = content.replace(sel, repl);
-				}
-			});
-
-			blob.content = content;
-		});
-	};
-
-	fQuery.fn.thenReplace = function (rules) {
-
-		return this.then(function () {
-
-			return this.replace(rules);
-		});
-	};
+            return this.replace(arg1, arg2);
+        });
+    };
 };
