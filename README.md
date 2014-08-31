@@ -14,7 +14,7 @@
 ## Usage
 
     fQuery.plugin('fquery-replace');
-    fQuery(selector).replace([['foo', 'bar'], [/^foo/, 'bar']]);
+    fQuery(selector).replace(regexp|substr, newSubStr|function);
 
 
 ## License
