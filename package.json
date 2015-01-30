@@ -1,7 +1,7 @@
 {
   "name": "fquery-comment",
   "displayName": "fQuery.comment",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "fQuery plugin to plugin to comment out code using that languages comment style",
   "homepage": "https://github.com/moonlite/fquery-comment",
   "bugs": "https://github.com/moonlite/fquery-comment/issues",
