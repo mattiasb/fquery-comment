@@ -1,17 +1,17 @@
 {
-  "name": "fquery-replace",
-  "displayName": "fQuery.replace",
-  "version": "0.2.1",
-  "description": "fQuery plugin to apply String.prototype.replace() to a file's content",
-  "homepage": "https://github.com/lrsjng/fquery-replace",
-  "bugs": "https://github.com/lrsjng/fquery-replace/issues",
-  "author": "Lars Jung <lrsjng@gmail.com> (http://larsjung.de)",
+  "name": "fquery-comment",
+  "displayName": "fQuery.comment",
+  "version": "1.0.0",
+  "description": "fQuery plugin to plugin to comment out code using that languages comment style",
+  "homepage": "https://github.com/moonlite/fquery-comment",
+  "bugs": "https://github.com/moonlite/fquery-comment/issues",
+  "author": "Mattias Bengtsson <mattias.jc.bengtsson@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lrsjng/fquery-replace.git"
+    "url": "https://github.com/moonlite/fquery-comment.git"
   },
-  "main": "./fquery-replace.js",
+  "main": "./fquery-comment.js",
   "scripts": {
     "test": "mocha --recursive test"
   },
